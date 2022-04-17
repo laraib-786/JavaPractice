@@ -11,9 +11,7 @@ public class PythagoreanTriplet {
 		this.c = Math.max(Math.max(a, b), c);
 	}
 
-	public int calculateSum() {
-		return a + b + c;
-	}
+	
 	public static PythagoreanTripletBuilder makeTripletsList() {
 		return new PythagoreanTripletBuilder();
 	}
