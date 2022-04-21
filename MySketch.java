@@ -24,23 +24,10 @@ public class MySketch extends PApplet {
     @Override
     public void draw(){
 
-        //2.System.out.println("Printed from draw method");
-        //3.ellipse(mouseX,HEIGHT/2,100 ,100);
-        paintWhite();
-        //4.ellipse(mouseX,mouseY, DIAMETER,DIAMETER);
-
-        //to move in x direction by itself
-        //ellipse(x,mouseY, DIAMETER,DIAMETER);
-        //x++;
-
-//        ellipse(x*2,(2*HEIGHT)/5,30,30);
-//        ellipse(x*3,(3*HEIGHT)/5,30,30);
-//        ellipse(x*4,(4*HEIGHT)/5,30,30);
-
         for(int speed=1;speed<=4;speed++){
             ball(x*speed,(HEIGHT*speed)/5);
         }
-3
+
         x++;
 
     }
@@ -50,6 +37,6 @@ public class MySketch extends PApplet {
     }
 
     private void paintWhite() {
-        //background(220);
+        background(220);
     }
 }
